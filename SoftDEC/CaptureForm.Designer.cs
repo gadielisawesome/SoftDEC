@@ -33,13 +33,13 @@
             this.TitleHolder = new System.Windows.Forms.Panel();
             this.TitleText = new System.Windows.Forms.Label();
             this.DescriptionHolder = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Spacer4 = new System.Windows.Forms.Panel();
             this.DescriptionText = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.AlertImage = new System.Windows.Forms.PictureBox();
+            this.Spacer5 = new System.Windows.Forms.Panel();
+            this.Spacer4 = new System.Windows.Forms.Panel();
             this.TitleHolder.SuspendLayout();
             this.DescriptionHolder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlertImage)).BeginInit();
             this.SuspendLayout();
             // 
             // Spacer1
@@ -70,7 +70,7 @@
             this.TitleText.Name = "TitleText";
             this.TitleText.Size = new System.Drawing.Size(1280, 100);
             this.TitleText.TabIndex = 0;
-            this.TitleText.Text = "OOPS... SOMETHING BROKE";
+            this.TitleText.Text = "CAUTION / PRECAUCIÓN";
             this.TitleText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TitleText.UseMnemonic = false;
             // 
@@ -78,8 +78,8 @@
             // 
             this.DescriptionHolder.BackColor = System.Drawing.Color.Black;
             this.DescriptionHolder.Controls.Add(this.DescriptionText);
-            this.DescriptionHolder.Controls.Add(this.pictureBox1);
-            this.DescriptionHolder.Controls.Add(this.panel1);
+            this.DescriptionHolder.Controls.Add(this.AlertImage);
+            this.DescriptionHolder.Controls.Add(this.Spacer5);
             this.DescriptionHolder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DescriptionHolder.Font = new System.Drawing.Font("Montserrat", 25F, System.Drawing.FontStyle.Bold);
             this.DescriptionHolder.ForeColor = System.Drawing.Color.White;
@@ -87,28 +87,6 @@
             this.DescriptionHolder.Name = "DescriptionHolder";
             this.DescriptionHolder.Size = new System.Drawing.Size(1280, 500);
             this.DescriptionHolder.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.ErrorImage = global::SoftDEC.Properties.Resources.spinner;
-            this.pictureBox1.Image = global::SoftDEC.Properties.Resources.spinner;
-            this.pictureBox1.InitialImage = global::SoftDEC.Properties.Resources.spinner;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1280, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.WaitOnLoad = true;
-            // 
-            // Spacer4
-            // 
-            this.Spacer4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Spacer4.Location = new System.Drawing.Point(0, 670);
-            this.Spacer4.Name = "Spacer4";
-            this.Spacer4.Size = new System.Drawing.Size(1280, 50);
-            this.Spacer4.TabIndex = 4;
             // 
             // DescriptionText
             // 
@@ -122,13 +100,35 @@
             this.DescriptionText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.DescriptionText.UseMnemonic = false;
             // 
-            // panel1
+            // AlertImage
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 25);
-            this.panel1.TabIndex = 3;
+            this.AlertImage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AlertImage.ErrorImage = global::SoftDEC.Properties.Resources.spinner;
+            this.AlertImage.Image = global::SoftDEC.Properties.Resources.spinner;
+            this.AlertImage.InitialImage = global::SoftDEC.Properties.Resources.spinner;
+            this.AlertImage.Location = new System.Drawing.Point(0, 25);
+            this.AlertImage.Name = "AlertImage";
+            this.AlertImage.Size = new System.Drawing.Size(1280, 125);
+            this.AlertImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AlertImage.TabIndex = 1;
+            this.AlertImage.TabStop = false;
+            this.AlertImage.WaitOnLoad = true;
+            // 
+            // Spacer5
+            // 
+            this.Spacer5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Spacer5.Location = new System.Drawing.Point(0, 0);
+            this.Spacer5.Name = "Spacer5";
+            this.Spacer5.Size = new System.Drawing.Size(1280, 25);
+            this.Spacer5.TabIndex = 3;
+            // 
+            // Spacer4
+            // 
+            this.Spacer4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Spacer4.Location = new System.Drawing.Point(0, 670);
+            this.Spacer4.Name = "Spacer4";
+            this.Spacer4.Size = new System.Drawing.Size(1280, 50);
+            this.Spacer4.TabIndex = 4;
             // 
             // CaptureForm
             // 
@@ -148,7 +148,7 @@
             this.Load += new System.EventHandler(this.CaptureForm_Load);
             this.TitleHolder.ResumeLayout(false);
             this.DescriptionHolder.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlertImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -160,8 +160,8 @@
         private System.Windows.Forms.Label TitleText;
         private System.Windows.Forms.Panel DescriptionHolder;
         private System.Windows.Forms.Label DescriptionText;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox AlertImage;
+        private System.Windows.Forms.Panel Spacer5;
         private System.Windows.Forms.Panel Spacer4;
     }
 }

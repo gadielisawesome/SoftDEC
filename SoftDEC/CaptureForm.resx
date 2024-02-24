@@ -118,9 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DescriptionText.Text" xml:space="preserve">
-    <value>The alert that we have doesn't have any message information to display right now. If you see this happening more than once, please contact the owner of this content (stream, video, etc).
+    <value>The alert that we have doesn't have any message information to display right now. If you see this happening more than once, please contact the owner of this content.
 
-Operators, please review your configuration.
-Check the error log for more information.</value>
+La alerta que tenemos no tiene ninguna información de mensaje para mostrar en este momento. Si ve que esto sucede más de una vez, comuníquese con el propietario de este contenido.</value>
   </data>
 </root>

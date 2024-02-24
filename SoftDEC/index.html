@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form</title>
+</head>
+<body>
+    <form id="requestDataForm" action="relay" method="post">
+        <label for="apiKey">API Key:</label><br>
+        <input type="text" id="apiKey" name="API-Key" required><br>
+        
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="Title" required><br>
+        
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="Description" required><br>
+        
+        <label for="imageURL">Image URL:</label><br>
+        <input type="text" id="imageURL" name="ImageURL"><br>
+        
+        <label for="audioURL">Audio URL:</label><br>
+        <input type="text" id="audioURL" name="AudioURL"><br>
+        
+        <label for="backValueR">Background Value R:</label><br>
+        <input type="number" id="backValueR" name="BackValueR"><br>
+        
+        <label for="backValueG">Background Value G:</label><br>
+        <input type="number" id="backValueG" name="BackValueG"><br>
+        
+        <label for="backValueB">Background Value B:</label><br>
+        <input type="number" id="backValueB" name="BackValueB"><br>
+        
+        <label for="foreValueR">Foreground Value R:</label><br>
+        <input type="number" id="foreValueR" name="ForeValueR"><br>
+        
+        <label for="foreValueG">Foreground Value G:</label><br>
+        <input type="number" id="foreValueG" name="ForeValueG"><br>
+        
+        <label for="foreValueB">Foreground Value B:</label><br>
+        <input type="number" id="foreValueB" name="ForeValueB"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
